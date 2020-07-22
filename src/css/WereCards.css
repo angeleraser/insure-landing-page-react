@@ -1,0 +1,47 @@
+@import "./variables.css";
+.were-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.were-cards article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 330px;
+}
+.were-cards article:not(:last-child) {
+  margin-bottom: 60px;
+}
+.were-cards article h2 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 22px;
+  color: var(--primary-violet);
+  margin-bottom: 20px;
+}
+.were-cards article p {
+  font-family: "Karla", sans-serif;
+  color: var(--primary-blue);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.were-cards article .icon {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+  .were-cards {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .were-cards article:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .were-cards article {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,103 @@
+@import "./variables.css";
+.nav-bar {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 24px 26px;
+  min-width: 360px;
+  z-index: 20;
+}
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  background-color: var(--dark-violet);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 34px 24px 0;
+  height: calc(100vh - 80px);
+  transition: all 0.3s;
+  min-width: 360px;
+  z-index: 20;
+}
+.nav-bar ul.menu-hidden {
+  left: 100%;
+}
+.nav-bar ul.menu-active {
+  left: 0;
+}
+.nav-bar a {
+  display: inline-block;
+  color: var(--light-gray);
+  text-decoration: none;
+}
+.nav-bar a {
+  padding: 14px 30px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.nav-bar a.active {
+  border: 1px solid var(--light-gray);
+}
+.nav-bar button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid var(--dark-violet);
+  outline: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.1s;
+}
+.nav-bar button.open {
+  background-image: url("../images/icon-hamburger.svg");
+}
+.nav-bar button.close {
+  background-image: url("../images/icon-close.svg");
+}
+@media screen and (min-width: 860px) {
+  .nav-bar ul {
+    flex-direction: row;
+    position: static;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    width: auto;
+    transition: none;
+  }
+  .nav-bar li {
+    margin-bottom: 0;
+  }
+  .nav-bar a {
+    color: var(--gray-violet);
+    margin-bottom: 0;
+    width: auto;
+  }
+  .nav-bar a:hover {
+    color: var(--dark-violet);
+  }
+  .nav-bar a.active {
+    border: none;
+    color: var(--light-gray);
+    background-color: var(--dark-violet);
+  }
+  .nav-bar button {
+    display: none;
+  }
+  .nav-bar li:not(:last-child) {
+    margin-right: 27px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav-bar {
+    padding: 21px 165px;
+  }
+}

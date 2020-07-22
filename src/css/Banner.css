@@ -1,0 +1,156 @@
+@import "./variables.css";
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-violet);
+  width: 100%;
+  position: relative;
+}
+
+.banner .image {
+  width: 100%;
+  max-width: 600px;
+  height: 452px;
+  background-image: url("../images/image-intro-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner .bg-pattern-ml {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner .bg-patter-dl {
+  position: absolute;
+  left: -165px;
+  top: 75%;
+  display: none;
+}
+.banner .bg-pattern-mr {
+  position: absolute;
+  top: 73%;
+  right: 0;
+}
+.banner .bg-pattern-dr {
+  position: absolute;
+  right: 0;
+  top: -13%;
+  display: none;
+}
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+  color: var(--light-gray);
+  padding: 94px 26px;
+  text-align: center;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  position: relative;
+  font-family: "DM Serif Display", sans-serif;
+}
+
+.banner p {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 20px 0 36px;
+}
+
+.banner a {
+  color: var(--light-gray);
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  padding: 15px 30px;
+  border: 1px solid var(--light-gray);
+  width: 147px;
+}
+.banner a:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-violet);
+}
+
+@media screen and (min-width: 800px) {
+  .banner {
+    flex-direction: row;
+    justify-content: center;
+    max-height: 600px;
+  }
+  .banner .bg-pattern-ml,
+  .banner .bg-pattern-mr {
+    display: none;
+  }
+  .banner .image {
+    width: 360px;
+    height: 400px;
+    background-size: 100%;
+  }
+  .banner .content {
+    order: 0;
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .banner h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 610px) {
+  .banner .bg-pattern-ml,
+  .banner .bg-pattern-mr {
+    display: none;
+  }
+  .banner .image {
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .banner {
+    align-items: flex-start;
+    padding: 0 165px;
+  }
+  .banner .bg-patter-dl,
+  .banner .bg-pattern-dr {
+    display: block;
+  }
+  .banner .content {
+    padding: 0;
+    margin-right: 30px;
+  }
+
+  .banner .image,
+  .banner .content {
+    margin-top: 105px;
+  }
+
+  .banner h1 {
+    padding-top: 68px;
+  }
+
+  .banner h1::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 154px;
+    top: 0;
+    left: 0;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .banner .image {
+    height: 620px;
+    width: 540px;
+  }
+}

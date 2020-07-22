@@ -1,0 +1,48 @@
+@import "./variables.css";
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 148px 26px;
+}
+
+.main-content h1 {
+  padding-top: 42px;
+  font-size: 42px;
+  font-family: "DM Serif Display", sans-serif;
+  color: var(--dark-violet);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.main-content h1::before {
+  content: "";
+  display: inline-block;
+  width: 153px;
+  border-top: 1px solid var(--gray-violet);
+  position: absolute;
+  top: 0;
+}
+@media screen and (min-width: 860px) {
+  .main-content h1 {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-content {
+    padding: 300px 165px 148px;
+    align-items: center;
+  }
+  .main-content h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-content {
+    align-items: flex-start;
+  }
+}
