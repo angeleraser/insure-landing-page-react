@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ac4fd60.chunk.css",
+    "main.js": "/static/js/main.3d130fcb.chunk.js",
+    "main.js.map": "/static/js/main.3d130fcb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.06fe0fd1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.06fe0fd1.js.map",
+    "static/js/2.85a878ab.chunk.js": "/static/js/2.85a878ab.chunk.js",
+    "static/js/2.85a878ab.chunk.js.map": "/static/js/2.85a878ab.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5c3c15a049da16fe7636f19c7ef10380.js": "/precache-manifest.5c3c15a049da16fe7636f19c7ef10380.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8ac4fd60.chunk.css.map": "/static/css/main.8ac4fd60.chunk.css.map",
+    "static/js/2.85a878ab.chunk.js.LICENSE.txt": "/static/js/2.85a878ab.chunk.js.LICENSE.txt",
+    "static/media/HWWBanner.css": "/static/media/bg-pattern-how-we-work-mobile.a4de14b0.svg",
+    "static/media/NavBar.css": "/static/media/icon-hamburger.d98c1990.svg",
+    "static/media/Banner.css": "/static/media/image-intro-desktop.8ac69ec7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06fe0fd1.js",
+    "static/js/2.85a878ab.chunk.js",
+    "static/css/main.8ac4fd60.chunk.css",
+    "static/js/main.3d130fcb.chunk.js"
+  ]
+}
