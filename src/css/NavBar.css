@@ -48,20 +48,19 @@
 .nav-bar button {
   width: 32px;
   height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   background-color: transparent;
-  border: 1px solid var(--dark-violet);
+  border: none;
   outline: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: all 0.1s;
 }
-.nav-bar button.open {
-  background-image: url("../images/icon-hamburger.svg");
+.nav-bar button.open::after {
+  content: url("../images/icon-hamburger.svg");
 }
-.nav-bar button.close {
-  background-image: url("../images/icon-close.svg");
+.nav-bar button.close::after {
+  content: url("../images/icon-close.svg");
 }
 @media screen and (min-width: 750px) {
   .nav-bar ul {
